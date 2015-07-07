@@ -2,10 +2,34 @@
 <html>
 	<head>
 		<title>Our First Canvas</title>
-        
+        <style type="text/css"> 
+
+			.visible {
+				border: 3px #777 dotted;
+				background-color: #ccc;
+			};
+
+        </style>
+
+        <script>
+        	window.onload = function(){
+
+        		var theCanvas = document.getElementById("Canvas1"); 
+
+        		theCanvas.width = 150; 
+        		theCanvas.height = 150;
+
+        	};
+        </script>
+
 	</head>
 	<body>
 		<h1>First Canvas Example</h1>
 		<p>This document contains our first canvas example</p>
+
+		<canvas id="Canvas1" class="visible" width="400" height="300">
+			<p> Oh noes! Your browser doesn't support Canvas :( </p>
+		</canvas>
+
 	</body>
 </html>
