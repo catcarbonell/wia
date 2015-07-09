@@ -100,6 +100,8 @@ Height and width and color are up to you.
 
 ********************************************/
 
+    //Draw Star here
+	
 	var star = document.getElementById('star');
 	
 			if (star && star.getContext) {
@@ -126,12 +128,13 @@ Height and width and color are up to you.
 	             	
 	             	ctx3.fill();
 	             	ctx3.stroke();
+	             	
 	             	}
 	             }
 	             
-	    }
+	    
 	             	
-//Draw Star here
+
 
 
 /*******************************************
@@ -148,6 +151,37 @@ Do not overlap any other object.
 
 //Draw Umbrella top here
 
+	var umbr = document.getElementById('umbrella');
+	
+			if (umbr && umbr.getContext) {
+	             var ctx4 = umbr.getContext("2d");
+	             
+	             if (ctx4) {
+	                 
+	                 ctx4.strokeStyle = 'rgba(102, 205, 170, 0.5)';
+	                 ctx4.fillStyle = 'rgba(32, 178, 170, 0.8)';
+	             
+	                 ctx4.lineWidth = 10;
+	                 
+	                 ctx4.beginPath();
+	                 ctx4.moveTo(100, 100);
+                     ctx4.bezierCurveTo(140, 10, 300, 10, 300, 170);
+                     ctx4.bezierCurveTo(245, 110, 240, 135, 195, 135);
+					 ctx4.bezierCurveTo(195, 110, 120, 90, 100, 103);
+					 ctx4.moveTo(100, 100);
+					 ctx4.lineTo(95, 110);
+	                 
+	                 ctx4.stroke(); 
+	                 ctx4.fill();
+	             
+	             
+	             }
+	             
+	    	}
+	
+	
+	
+
 /*******************************************
 PART 5
 
@@ -157,6 +191,23 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 ********************************************/
 
 //Draw text here
+	var txt = document.getElementById('txt');
+	
+			if (txt && txt.getContext) {
+	        	var ctx5 = txt.getContext("2d");
+				
+				if (ctx5) {
+					var yay = "Yay!";
+					
+					ctx5.fillStyle = 'rgb(188, 143, 143)';
+					ctx5.font = '50px Raleway';
+				
+					ctx5.fillText( yay, 50, 100);
+					
+		
+			}
+		}
+	}
 
 /*******************************************
 PART 6
