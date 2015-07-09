@@ -255,7 +255,100 @@ You must use at least 3 different methods.
 ********************************************/
 
 // Draw scene here
+	var combo = document.getElementById('combo');
+	
+	if (combo && combo.getContext) {
+		var ctx7 = combo.getContext("2d");
+		
+		if(ctx7) {
+		
+			
+			
+			// Whispy cloud effect 1 - quadratic curve
+			
+			
+			ctx7.fillStyle = 'rgba(255, 255, 255, 0.8)';
+			ctx7.strokeStyle = 'rgba(224, 255, 255, 0.5)';
+			
+			ctx7.beginPath();
+			
+      		ctx7.moveTo(170, 100);
+      		ctx7.quadraticCurveTo(100, 90, 400, 10);
+      		
+      		ctx7.moveTo(150, 140);
+      		ctx7.quadraticCurveTo(200, 80, 380, 100)
+      		
+      		
+      		ctx7.fill();
+      		ctx7.stroke();
+      		
+      		//Whispy cloud effect 2 - bezier curve
+      		//(cx1, cy1, cx2, cy2, epx, epy)
+      		
+      		
+      		ctx7.fillStyle = 'rgba(255, 255, 255, 0.8)';
+			ctx7.strokeStyle = 'rgba(224, 255, 255, 0.5)';
+			
+			ctx7.beginPath();
+			
+			ctx7.moveTo(0,90);
+			ctx7.bezierCurveTo(10, 90, 90, 250, 150, 140);
+			
+			ctx7.moveTo(60,90);
+			ctx7.bezierCurveTo(320, 130, 120, 130, 180, 200);
+			
+			ctx7.fill();
+			ctx7.stroke();
+			
+			//Shine effect - line 
+			
+			ctx7.fillStyle = 'rgba(255, 250, 205, 0.9)';
+			ctx7.strokeStyle = 'rgba(224, 255, 255, 0.8)';
+			
+			ctx7.beginPath();
+			ctx7.moveTo(0,0);
+			ctx7.lineTo(150, 140);
+			ctx7.lineTo(130, 0);
+			
+			ctx7.moveTo(200, 0);
+			ctx7.lineTo(150, 140);
+			ctx7.lineTo(400, 0);
+			
+			ctx7.moveTo(400, 200);
+			ctx7.lineTo(150,140);
+			ctx7.lineTo(180, 200);
+			
+			ctx7.moveTo(130, 200);
+			ctx7.lineTo(150, 140);
+			ctx7.lineTo(0, 200);
+			
+			ctx7.fill();
+			ctx7.stroke();
+			
+			
+			// Sun - circle/arc
+			ctx7.fillStyle = 'rgb(255, 250, 205)';
+	        
+	        
+	        ctx7.linewidth = 5;
+	             	
+	             	ctx7.beginPath();
+	             	
+	         		ctx7.moveTo(140,140);
+	             	ctx7.arc(150, 140, 50, 2*Math.PI, false);
+	             	
+	             	
+	             	ctx7.fill();
+	             	
+		
+					}
+			
+			
+		}
+	}
+	
 
+	
 	
 
 
