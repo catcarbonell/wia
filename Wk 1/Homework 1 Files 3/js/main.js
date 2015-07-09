@@ -50,8 +50,7 @@ window.onload = function() {
 						ctx.strokeRect(0, 0, 50, 100);
 					}
 				}
-				
-			}
+			
 
 
 /*******************************************
@@ -68,6 +67,24 @@ Use the arc method
 
 
 //Draw Circle here
+  
+    var circ = document.getElementById('circle');
+				if (circ && circ.getContext) {
+					var ctx2 = circ.getContext("2d");
+					
+					if (ctx2) {
+					
+						ctx2.fillStyle = 'rgba(255, 0, 0, 0.5)';
+						ctx2.strokeStyle = 'rgb(0, 0, 0)';
+						
+						ctx2.beginPath();
+						ctx2.arc(50, 50, 20, 2*Math.PI, false);
+						ctx2.lineWidth = 30;
+						ctx2.fill();
+						ctx2.stroke();
+					}
+				}
+			
 
 
 
@@ -83,7 +100,37 @@ Height and width and color are up to you.
 
 ********************************************/
 
-
+	var star = document.getElementById('star');
+	
+			if (star && star.getContext) {
+	             var ctx3 = star.getContext("2d");
+	             
+	             if (ctx3) {
+	             
+	             	ctx3.fillStyle = 'rgba(255, 250, 205, 0.8)';
+	             	ctx3.strokeStyle = 'rgb(255, 205, 0)';
+	             	ctx3.linewidth = 3;
+	             	
+	             	ctx3.beginPath();
+	             	ctx3.moveTo(100,100);
+	             	ctx3.lineTo(130, 50);
+	             	ctx3.lineTo(160, 100);
+	             	ctx3.lineTo(205, 100);
+	             	ctx3.lineTo(160, 145);
+	             	ctx3.lineTo(185, 195);
+	             	ctx3.lineTo(130, 160);
+	             	ctx3.lineTo(80, 195);
+	             	ctx3.lineTo(100, 145);
+	             	ctx3.lineTo(60, 100);
+	             	ctx3.lineTo(100, 100);
+	             	
+	             	ctx3.fill();
+	             	ctx3.stroke();
+	             	}
+	             }
+	             
+	    }
+	             	
 //Draw Star here
 
 
