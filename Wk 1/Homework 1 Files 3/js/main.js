@@ -223,15 +223,24 @@ Reminder to use the drawImage method for all 3 of the ways.
 //Draw images here
 	var image = document.getElementById('image');
 	
-			if (image && image.getContext) {
-	        	var ctx6 = image.getContext("2d");
+	if (image && image.getContext) {
+	    var ctx6 = image.getContext("2d");
 				
-				if (ctx6) {
+		if (ctx6) {
 					
 					var srcImg = document.getElementById("logo");
+					
+					// Import original
+					//ctx6.drawImage(srcImg, 0, 0);
+					
+					//Scaled by 50%
+					//ctx6.drawImage(srcImg, 50, 50, 1650, 544);
+					
+					//Sliced
+					ctx6.drawImage(srcImg, 350, 500, 380, 400, 0, 0, 100, 100);
 				}
 			}
-			}
+			
 
 
 /*******************************************
@@ -246,5 +255,7 @@ You must use at least 3 different methods.
 ********************************************/
 
 // Draw scene here
+
+	
 
 
