@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  WIA-####
+     Name: Cathleen Carbonell
+     Date: 07/09/2015
+     Class & Section:  WIA- 1507
      Comments: "HTML5 Canvas Drawing"
  */
 
@@ -35,6 +35,23 @@ Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
+
+window.onload = function() {
+
+    var rect = document.getElementById('rectangle');
+				if (rect && rect.getContext) {
+					var ctx = rect.getContext("2d");
+					if (ctx) {
+					
+						ctx.fillStyle = 'rgb(50 , 0, 230)';
+						ctx.strokeStyle = 'rgb(0 , 0, 0)';
+						
+						ctx.fillRect(0, 0, 50, 100);
+						ctx.strokeRect(0, 0, 50, 100);
+					}
+				}
+				
+			}
 
 
 /*******************************************
