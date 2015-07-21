@@ -1,0 +1,19 @@
+/* 
+
+Presentation Project -- Cathleen Carbonell -- WIA 1507
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+	color: #555;
+	font-family: Raleway, Arial, sans-serif;
+	font-size: 12px;	
+}
+
+h1 {
+	font-family: Oswald, Arial, sans-serif;
+	font-size: 2em;
+}
