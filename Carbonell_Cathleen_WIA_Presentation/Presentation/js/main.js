@@ -9,8 +9,10 @@ $( document ).ready(function() {
 
 	$('a.gallery').featherlightGallery({
 	    openSpeed: 900,
+	    closeSpeed: 600,
 	    previousIcon: '&#9664;',
     	nextIcon: '&#9654;'
+
 	});
 
 
