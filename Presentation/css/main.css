@@ -4,16 +4,59 @@ Presentation Project -- Cathleen Carbonell -- WIA 1507
 
 */
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+
+
 
 body {
-	color: #555;
-	font-family: Raleway, Arial, sans-serif;
-	font-size: 12px;	
+	color: #999;
+	background-color: #eee;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 
+
 h1 {
-	font-family: Oswald, Arial, sans-serif;
-	font-size: 2em;
+	color: #bdd7d0;
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	margin-bottom: 5px;
+}
+
+h4 {
+	margin-bottom: 50px;
+}
+
+
+a, a:visited {
+	color: #9dc4b9;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+.imgth {
+	width: 100px;
+	height: 100px;
+
+}
+
+.featherlight-content {
+	border-radius: 20px;
+}
+
+
+#container {
+	background-color: #fff;
+	width: 50%;
+	margin: 50px auto;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+#galldemo {
+	padding-bottom: 50px;
 }
